@@ -366,7 +366,7 @@ a:hover {
 /* SERVICES GRID */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -592,6 +592,10 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.footer-bottom p {
+  color: #FFFFFF;
+}
+
 .practice-disclaimer {
   margin-top: 1rem;
   color: var(--accent-color);
@@ -632,6 +636,9 @@ a:hover {
   .split-content.reverse > * {
     direction: ltr;
   }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .hero h1 { font-size: 2.5rem; }
   .header-cta .btn { display: none; }
   .mobile-menu-btn { display: block; }
@@ -671,6 +678,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
   .hero-ctas {
     flex-direction: column;
     width: 100%;
