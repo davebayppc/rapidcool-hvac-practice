@@ -400,6 +400,10 @@ a:hover {
   text-transform: uppercase;
 }
 
+.service-card p {
+  color: #333333;
+}
+
 .service-link {
   font-weight: 800;
   display: inline-flex;
@@ -499,6 +503,10 @@ a:hover {
   color: var(--white);
   font-size: 3rem;
   text-transform: uppercase;
+}
+
+.page-header p {
+  color: var(--white);
 }
 
 .content-container {
