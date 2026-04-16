@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RapidCool Air Services</title>
+    <meta name="description" content="Contact RapidCool Air Services for 24/7 emergency AC repair, or schedule a free installation estimate. Serving Orlando and surrounding areas.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="practice-banner">⚠️ PRACTICE SITE - NOT A REAL BUSINESS ⚠️</div>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/"><i class="fa-solid fa-snowflake"></i> Rapid<span>Cool</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/service-areas/">Service Areas</a></li>
+                    <li><a href="/about-us/">About Us</a></li>
+                    <li><a href="/contact/" style="color: var(--secondary-color);">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:5551234567" class="btn btn-accent"><i class="fa-solid fa-phone"></i> (555) 123-4567</a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Contact RapidCool</h1>
+        <p>We're ready to help. Book service online or call us for immediate assistance.</p>
+    </div>
+
+    <section class="section">
+        <div class="content-container" style="max-width: 1000px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                
+                <!-- Contact Details -->
+                <div>
+                    <h2 class="text-accent" style="margin-top: 0;">Get In Touch</h2>
+                    <p>Contact us using the form to schedule a service visit or an estimate. For immediate emergency service, please call us directly.</p>
+                    
+                    <ul style="list-style: none; padding: 0; margin-top: 2rem;">
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                            <i class="fa-solid fa-phone text-accent" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 0.2rem; color: var(--primary-color);">Phone (Available 24/7)</h4>
+                                <a href="tel:5551234567" style="color: var(--text-dark); font-weight: 600;">(555) 123-4567</a>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                            <i class="fa-solid fa-envelope text-accent" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 0.2rem; color: var(--primary-color);">Email</h4>
+                                <a href="mailto:service@practice-hvac-site.test" style="color: var(--text-dark); font-weight: 600;">service@practice-hvac-site.test</a>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                            <i class="fa-solid fa-location-dot text-accent" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="margin-bottom: 0.2rem; color: var(--primary-color);">Office Location</h4>
+                                <p style="margin: 0; color: var(--text-dark); font-weight: 600;">123 Cooling Ave<br>Orlando, FL 32801</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web3Forms Form -->
+                <div>
+                    <div class="contact-form" style="padding: 2rem;">
+                        <h3 style="margin-top: 0;">Request Service</h3>
+                        <!-- IMPORTANT: Replace YOUR_ACCESS_KEY_HERE with your Web3Forms Access Key -->
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="subject" value="New Service Request from RapidCool Website">
+                            <input type="hidden" name="from_name" value="RapidCool Website">
+                            
+                            <!-- Optional redirect <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
+
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required placeholder="(555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="AC Repair">AC Repair</option>
+                                    <option value="AC Installation/Quote">New AC Quote</option>
+                                    <option value="Heating Service">Heating Service</option>
+                                    <option value="Maintenance">Maintenance Check</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">How can we help?</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" required placeholder="Describe the issue you are experiencing..."></textarea>
+                            </div>
+                            
+                            <!-- Honeypot -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Request</button>
+                            <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #6B7280;">No spam. Your information is secure.</p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>RapidCool Air Services</h4>
+                <p>Central Florida’s trusted experts for AC repair, installation, and maintenance. Available 24/7 for emergency service.</p>
+                <div style="margin-top: 1rem;"><a href="tel:5551234567" style="font-size: 1.2rem; font-weight: bold; color: var(--accent-color);"><i class="fa-solid fa-phone"></i> (555) 123-4567</a></div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="/services/">Our Services</a>
+                <a href="/service-areas/">Service Areas</a>
+                <a href="/about-us/">About Us</a>
+                <a href="/contact/">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Top Services</h4>
+                <a href="/services/ac-repair/">Emergency AC Repair</a>
+                <a href="/services/ac-installation/">AC Installation</a>
+                <a href="/services/heating/">Heating & Furnace</a>
+                <a href="/services/hvac-maintenance/">Maintenance Plans</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="/privacy-policy/">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RapidCool Air Services. All rights reserved.</p>
+            <p class="practice-disclaimer">This is a practice website for educational purposes only. Not a real business.</p>
+        </div>
+    </footer>
+
+    <a href="tel:5551234567" class="mobile-fab"><i class="fa-solid fa-phone"></i></a>
+    <script src="../js/main.js"></script>
+</body>
+</html>
