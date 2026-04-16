@@ -370,6 +370,7 @@ a:hover {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .service-card {
@@ -380,6 +381,8 @@ a:hover {
   transition: var(--transition);
   text-align: center;
   border-top: 4px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -409,7 +412,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: auto;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -585,7 +588,7 @@ a:hover {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 2rem;
   text-align: center;
-  color: #64748b;
+  color: #FFFFFF;
   font-size: 0.9rem;
 }
 
