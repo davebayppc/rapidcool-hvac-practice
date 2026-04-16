@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="utility-bar">
+        <div><i class="fa-solid fa-truck-fast"></i> <span class="utility-highlight">24/7 EMERGENCY SERVICE</span> ACROSS CENTRAL FLORIDA</div>
+        <div style="font-size: 1.2rem;"><a href="tel:5551234567"><i class="fa-solid fa-phone"></i> CALL NOW: <strong>(555) 123-4567</strong></a></div>
+    </div>
     <div class="practice-banner">⚠️ PRACTICE SITE - NOT A REAL BUSINESS ⚠️</div>
 
     <header class="site-header">
@@ -33,62 +37,47 @@
     </header>
 
     <div class="page-header">
-        <h1>Contact RapidCool</h1>
-        <p>We're ready to help. Book service online or call us for immediate assistance.</p>
+        <h1>Command Center</h1>
+        <p>Bypass the corporate runaround. Speak directly with a live dispatcher immediately.</p>
     </div>
 
-    <section class="section">
-        <div class="content-container" style="max-width: 1000px;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+    <section class="section section-bg">
+        <div class="content-constrained" style="max-width: 1200px;">
+            <div class="split-content">
                 
                 <!-- Contact Details -->
                 <div>
-                    <h2 class="text-accent" style="margin-top: 0;">Get In Touch</h2>
-                    <p>Contact us using the form to schedule a service visit or an estimate. For immediate emergency service, please call us directly.</p>
+                    <h2 class="dr-subhead" style="margin-top: 0;">Hit The Red Button Fast</h2>
+                    <p class="dr-paragraph">When your HVAC system violently fails, you absolutely do not have time to sit endlessly on hold or leave a pathetic voicemail on a machine that no one checks. Our heavy-duty dispatch lines are permanently manned 24 hours a day, 365 days a year by experienced personnel trained to immediately route a technician to your door.</p>
                     
                     <ul style="list-style: none; padding: 0; margin-top: 2rem;">
-                        <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
-                            <i class="fa-solid fa-phone text-accent" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
-                            <div>
-                                <h4 style="margin-bottom: 0.2rem; color: var(--primary-color);">Phone (Available 24/7)</h4>
-                                <a href="tel:5551234567" style="color: var(--text-dark); font-weight: 600;">(555) 123-4567</a>
-                            </div>
+                        <li style="margin-bottom: 2rem; background: var(--white); padding: 1.5rem; border-left: 5px solid var(--accent-color); box-shadow: var(--shadow-sm);">
+                            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color); font-size: 1.3rem;">Emergency Hotline</h4>
+                            <a href="tel:5551234567" style="color: var(--accent-color); font-size: 1.8rem; font-weight: 800;">(555) 123-4567</a>
                         </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
-                            <i class="fa-solid fa-envelope text-accent" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
-                            <div>
-                                <h4 style="margin-bottom: 0.2rem; color: var(--primary-color);">Email</h4>
-                                <a href="mailto:service@practice-hvac-site.test" style="color: var(--text-dark); font-weight: 600;">service@practice-hvac-site.test</a>
-                            </div>
-                        </li>
-                        <li style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
-                            <i class="fa-solid fa-location-dot text-accent" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
-                            <div>
-                                <h4 style="margin-bottom: 0.2rem; color: var(--primary-color);">Office Location</h4>
-                                <p style="margin: 0; color: var(--text-dark); font-weight: 600;">123 Cooling Ave<br>Orlando, FL 32801</p>
-                            </div>
+                        <li style="margin-bottom: 2rem; background: var(--white); padding: 1.5rem; border-left: 5px solid var(--secondary-color); box-shadow: var(--shadow-sm);">
+                            <h4 style="margin-bottom: 0.5rem; color: var(--primary-color); font-size: 1.3rem;">Electronic Dispatch</h4>
+                            <a href="mailto:service@practice-hvac-site.test" style="color: var(--text-dark); font-weight: 600; font-size: 1.1rem;">service@practice-hvac-site.test</a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Web3Forms Form -->
                 <div>
-                    <div class="contact-form" style="padding: 2rem;">
-                        <h3 style="margin-top: 0;">Request Service</h3>
+                    <div class="contact-form">
+                        <h3 style="margin-top: 0; margin-bottom: 2rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 1rem;">Not An Emergency? Submit A Ticket</h3>
                         <!-- IMPORTANT: Replace YOUR_ACCESS_KEY_HERE with your Web3Forms Access Key -->
                         <form action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                             <input type="hidden" name="subject" value="New Service Request from RapidCool Website">
                             <input type="hidden" name="from_name" value="RapidCool Website">
                             
-                            <!-- Optional redirect <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
-
                             <div class="form-group">
-                                <label for="name">Full Name</label>
+                                <label for="name">Property Owner Name</label>
                                 <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone Number</label>
+                                <label for="phone">Direct Cell Phone</label>
                                 <input type="tel" id="phone" name="phone" class="form-control" required placeholder="(555) 000-0000">
                             </div>
                             <div class="form-group">
@@ -96,25 +85,25 @@
                                 <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
                             </div>
                             <div class="form-group">
-                                <label for="service">Service Needed</label>
+                                <label for="service">Required Intervention</label>
                                 <select id="service" name="service" class="form-control" required>
                                     <option value="" disabled selected>Select an option</option>
-                                    <option value="AC Repair">AC Repair</option>
-                                    <option value="AC Installation/Quote">New AC Quote</option>
-                                    <option value="Heating Service">Heating Service</option>
-                                    <option value="Maintenance">Maintenance Check</option>
+                                    <option value="AC Repair">Shattered AC Repair</option>
+                                    <option value="AC Installation/Quote">Total System Replacement Quote</option>
+                                    <option value="Heating Service">Heating Failure</option>
+                                    <option value="Maintenance">Heavy Duty Tune-Up</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="message">How can we help?</label>
-                                <textarea id="message" name="message" class="form-control" rows="4" required placeholder="Describe the issue you are experiencing..."></textarea>
+                                <label for="message">Describe the Catastrophe</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required placeholder="What exactly is the machine doing..."></textarea>
                             </div>
                             
                             <!-- Honeypot -->
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                            <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Request</button>
-                            <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #6B7280;">No spam. Your information is secure.</p>
+                            <button type="submit" class="btn btn-accent" style="width: 100%;">LAUNCH SERVICE TICKET</button>
+                            <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: #64748b; font-weight: 600;">Submitting this form dispatches an alert immediately to our floor manager.</p>
                         </form>
                     </div>
                 </div>
@@ -123,13 +112,38 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Comprehensive FAQs -->
+    <section class="section">
+        <div class="section-header">
+            <h2>Command Center FAQs</h2>
+            <p>Direct answers regarding exactly what happens when you press connect.</p>
+        </div>
+        <div class="faq-section">
+            <div class="faq-item">
+                <h3><i class="fa-solid fa-circle-right"></i> When I submit the online ticket, exactly how long until I am aggressively called?</h3>
+                <p>If you submit a digital ticket during standard daytime operational hours, our dedicated digital intake coordinator will violently call your cell phone within precisely 15 minutes. We constantly monitor these incoming digital forms on a live dashboard to ensure absolutely nothing slips through the cracks. However, if your system is entirely dead, do not fill out the form—call the emergency hotline right now.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fa-solid fa-circle-right"></i> Will I violently be put on a holding machine if I call the hotline?</h3>
+                <p>We absolutely refuse to utilize automated phone trees that demand you "press 1 for service" while your living room is 95 degrees. Your phone call violently lands on the physical desk of a live dispatcher sitting in our Central Florida office. Even at two in the morning, our after-hours answering service picks up the second ring and patches a master technician directly to your phone.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fa-solid fa-circle-right"></i> Can I aggressively demand a specific technician return to my house?</h3>
+                <p>Yes, we actively encourage our customers to aggressively request the exact specific technician who serviced their equipment previously. While we cannot mathematically guarantee that specific technician is completely free for an immediate emergency dispatch, we will heavily prioritize booking them for your property. Building immense, trustworthy relationships between our technicians and our clients is the absolute backbone of our operation.</p>
+            </div>
+            <div class="faq-item">
+                <h3><i class="fa-solid fa-circle-right"></i> Do you ruthlessly sell my contact information to weird third-party call centers?</h3>
+                <p>Absolutely never under any conceivable circumstance. The phone number and email address you blast into our digital form is locked firmly inside our incredibly secure internal customer relationship software. We will only ever use your critical information to dispatch trucks, send invoices, or alert you about a desperately needed maintenance window in the spring.</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="site-footer">
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>RapidCool Air Services</h4>
-                <p>Central Florida’s trusted experts for AC repair, installation, and maintenance. Available 24/7 for emergency service.</p>
-                <div style="margin-top: 1rem;"><a href="tel:5551234567" style="font-size: 1.2rem; font-weight: bold; color: var(--accent-color);"><i class="fa-solid fa-phone"></i> (555) 123-4567</a></div>
+                <p>The undisputed experts for brutal AC repair, heavy-duty installation, and ironclad maintenance across Central Florida.</p>
+                <div style="margin-top: 1rem;"><a href="tel:5551234567" style="font-size: 1.2rem; font-weight: 800; color: var(--white);"><i class="fa-solid fa-phone" style="color: var(--accent-color);"></i> (555) 123-4567</a></div>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
@@ -151,7 +165,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 RapidCool Air Services. All rights reserved.</p>
+            <p>&copy; 2026 RapidCool Air Services. All rights reserved. Licensed & Insured in FL.</p>
             <p class="practice-disclaimer">This is a practice website for educational purposes only. Not a real business.</p>
         </div>
     </footer>
