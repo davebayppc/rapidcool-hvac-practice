@@ -129,10 +129,14 @@
                         <h3 class="text-branddark text-2xl font-display font-bold mb-2">Request Service Now</h3>
                         <p class="text-gray-500 mb-6 text-sm font-medium">Get your AC blowing ice-cold today.</p>
                         
-                        <form action="../../thank-you/" method="GET" class="space-y-4 text-gray-800">
+                        <form id="contact-form" action="../../thank-you/" method="GET" class="space-y-4 text-gray-800">
                             <div>
                                 <label for="name" class="block text-sm font-bold text-gray-700">Full Name</label>
                                 <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-brandblue focus:border-brandblue" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-gray-700">Email Address</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-brandblue focus:border-brandblue" placeholder="john@example.com">
                             </div>
                             <div>
                                 <label for="phone" class="block text-sm font-bold text-gray-700">Phone Number</label>
